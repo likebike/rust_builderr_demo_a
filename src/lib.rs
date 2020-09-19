@@ -1,4 +1,6 @@
-pub fn foo() -> bool { true }
+pub fn foo() {
+    println!("Running rust_builderr_demo_a::foo()");
+}
 
 #[cfg(test)]
 mod tests {
