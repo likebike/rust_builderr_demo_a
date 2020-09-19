@@ -1,11 +1,23 @@
+extern {
+    fn cfoo();
+    fn cfoo2();
+}
+
 pub fn foo() {
-    println!("Running rust_builderr_demo_a::foo()");
+    println!("Start of rust_builderr_demo_a::foo()");
+    unsafe {
+        cfoo();
+        cfoo2();
+    }
+    println!("End of rust_builderr_demo_a::foo()");
 }
 
 #[cfg(test)]
 mod tests {
+    use super::*;
+
     #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
+    fn test1() {
+        foo();
     }
 }
