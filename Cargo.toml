@@ -1,5 +1,5 @@
 [package]
-name = "rustdemo_a"
+name = "rust_builderr_demo_a"
 version = "0.1.0"
 authors = ["Christopher Sebastian <christopher.sebastian@decatechnologies.com>"]
 edition = "2018"
